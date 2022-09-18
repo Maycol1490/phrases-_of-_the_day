@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #FFE9A0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    min-height: 200px;
+    margin: 20px;
+    box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 2.25s;
+    transform-style: preserve-3d;
+    width: 80%;
+    min-height: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  .front,
+  .back {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .front{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .title {
+    transform: translateZ(5rem);
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    transform: translateZ(2rem);
+    font-size: 1.5rem;
+  }
+  
+  .back {
+    display: flex;
+    justify-content: center;
+    transform: rotateY(0.5turn);
+    background-color: white; 
+    width: 100%; 
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    transform: translateZ(3rem);
+  }
+  .card_quote{
+    font-size: 1.5rem;
+  }
+  .card_btn{
+    display: block;
+    margin-left: 70%;
+    margin-top: 10px;
+    border: none;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* From uiverse.io by @adamgiebl */
+.cssbuttons-io-button {
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+   }
+   
+   .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    right: 0.3em;
+    transition: all 0.3s;
+   }
+   
+   .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+   }
+   
+   .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+   }
+   
+   .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+   }
+   
+   .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+   }
+   
