@@ -8,7 +8,7 @@ const QuoteBox = ({ RandomQuote, RandomColor, RandomStyle, getRandomAll }) => {
     <div className="content">
       <div className="front">
         <h3 style={ColorObj} className="title">Hey</h3>
-        <p style={ColorObj} className="subtitle">Hover me :)</p>
+        <p style={ColorObj} className="subtitle">Look at me:)</p>
       </div>
       <div className="back">
         <div className="description">
