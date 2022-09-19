@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
 .App{
@@ -97,7 +98,6 @@
     width: 30px;
     aspect-ratio: 1;
     border-radius: 50%;
-    cursor: pointer;
 }
 /* From uiverse.io by @adamgiebl */
 .cssbuttons-io-button {
@@ -115,6 +115,7 @@
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
+    cursor: pointer;
    }
    
    .cssbuttons-io-button .icon {
