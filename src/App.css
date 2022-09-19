@@ -12,6 +12,8 @@
     align-items: center;
 }
 .card{
+    display: flex;
+    flex-direction: column;
     background-color: #FFE9A0;
     padding: 20px;
     border-radius: 10px;
@@ -86,9 +88,11 @@
     font-size: 1.5rem;
   }
   .card_btn{
-    display: block;
-    margin-left: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
     margin-top: 10px;
+    margin-right: 20%;
     border: none;
     width: 30px;
     aspect-ratio: 1;
@@ -108,7 +112,6 @@
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
-    overflow: hidden;
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
